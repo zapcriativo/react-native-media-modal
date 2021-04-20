@@ -1,0 +1,52 @@
+{
+  "name": "react-native-media-modal",
+  "version": "0.1.0",
+  "description": "React Native Modal with Media Content",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zapcriativo/react-native-media-modal.git"
+  },
+  "keywords": [
+    "react-native-pop-up",
+    "in-app-message",
+    "react-native-modal",
+    "media-modal",
+    "image-modal",
+    "video-modal"
+  ],
+  "author": "Alan Ribeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zapcriativo/react-native-media-modal/issues"
+  },
+  "homepage": "https://github.com/zapcriativo/react-native-media-modal/#readme",
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "eslint": "^5.14.1",
+    "react-native-webview": "9.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.1.0",
+    "metro-react-native-babel-preset": "^0.52.0",
+    "prettier": "^1.16.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.8.3",
+    "react-native": "^0.61.2"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    }
+  }
+}

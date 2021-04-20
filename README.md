@@ -12,6 +12,19 @@ npm i react-native-media-modal --save
 yarn add react-native-media-modal
 ```
 
+## Usage
+
+```jsx
+import MediaModal from "react-native-media-modal";
+```
+
+## Methods
+
+| Method Name | Description    |
+| ----------- | -------------- |
+| open        | Open AlertPro  |
+| close       | Close AlertPro |
+
 ## Props
 
 | Prop             | Type     | Description                                              | Default                    |

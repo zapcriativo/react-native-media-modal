@@ -1,6 +1,6 @@
 ![Screenshot](https://github.com/zapcriativo/react-native-media-modal/blob/main/screenshots/rn_media_modal.png?raw=true)
 
-##### #### ### ## React Native Media Modal is a component that facilitates the creation of a pop-up with media content generally used for communications or in-app marketing.
+#### React Native Media Modal is a component that facilitates the creation of a pop-up with media content generally used for communications or in-app marketing.
 
 ## Installation
 

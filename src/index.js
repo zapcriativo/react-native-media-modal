@@ -92,7 +92,7 @@ class MediaModal extends Component {
             <Animated.View style={[styles.container, customStyles.container, { transform: [{ scale: this.springValue }] }]}>
               {showMedia && (
                 <View>
-                  {mediaType == 'image' ? (
+                  {mediaImage ? (
                     <Image
                       source={{ uri: mediaURL }}
                       style={[styles.media, customStyles.media]}
@@ -105,7 +105,6 @@ class MediaModal extends Component {
                       source={{ uri: mediaURL }}
                     />
                   )}
-                  {/* 'https://www.youtube.com/embed/B5fe930547w?rel=0&autoplay=0&showinfo=0&controls=0' */}
                 </View>
               )}
 
@@ -163,7 +162,7 @@ MediaModal.propTypes = {
   message: PropTypes.string,
   backdropClose: PropTypes.bool,
   onClose: PropTypes.func,
-  mediaType: PropTypes.string, // video or image
+  mediaImage: PropTypes.bool, // video or image
   mediaURL: PropTypes.string,
   useNativeDriver: PropTypes.bool,
   showCancel: PropTypes.bool,
@@ -178,7 +177,7 @@ MediaModal.defaultProps = {
   backdropClose: true,
   onClose: null,
   showMedia: true,
-  mediaType: 'image', // image or webview
+  mediaImage: true, // image or webview
   mediaURL: 'https://free-images.com/sm/1797/contre_jour_on_english.jpg',
   useNativeDriver: false,
   showCancel: false,

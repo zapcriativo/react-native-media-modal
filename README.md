@@ -1,3 +1,5 @@
+https://github.com/zapcriativo/react-native-media-modal/blob/main/screenshots/rn_media_modal.png?raw=true
+
 ## Installation
 
 ```
@@ -41,9 +43,9 @@ customStyles: {
   media: {...}, // Media 
   closeButton: {...}, // Close button
   closeButtonIcon: {...}, // Close button Icon
-  buttonCancel: {...} // Cancel Button
-  textButtonCancel: {...} // Cancel Button Text
-  buttonConfirm: {...} // Confirm button
+  buttonCancel: {...}, // Cancel Button
+  textButtonCancel: {...}, // Cancel Button Text
+  buttonConfirm: {...}, // Confirm button
   textButtonConfirm: {...} // Confirm button's Text
 }
 ```

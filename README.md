@@ -1,5 +1,7 @@
 ![Screenshot](https://github.com/zapcriativo/react-native-media-modal/blob/main/screenshots/rn_media_modal.png?raw=true)
 
+##### #### ### ## React Native Media Modal is a component that facilitates the creation of a pop-up with media content generally used for communications or in-app marketing.
+
 ## Installation
 
 ```
@@ -62,3 +64,12 @@ customStyles: {
   textButtonConfirm: {...} // Confirm button's Text
 }
 ```
+
+
+## Credits 
+[Inspired on React Native Alert Pro from NY Samnang](https://github.com/nysamnang/react-native-alert-pro "Inspired on React Native Alert Pro from NY Samnang")
+
+If you find the project useful, please contribute with a star!
+
+## Author
+By [Alan Ribeiro](https://github.com/zapcriativo "Alan Ribeiro")

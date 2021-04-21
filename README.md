@@ -22,10 +22,10 @@ import MediaModal from "react-native-media-modal";
 
 ## Methods
 
-| Method Name | Description    |
-| ----------- | -------------- |
-| open        | Open AlertPro  |
-| close       | Close AlertPro |
+| Method Name | Description        |
+| ----------- | ------------------ |
+| open        | Open Medial Modal  |
+| close       | Close Medial Modal |
 
 ## Props
 
@@ -40,7 +40,7 @@ import MediaModal from "react-native-media-modal";
 | showConfirm      | boolean  | Show a Confirm button                                    | true                       |
 | textCancel       | string   | Text display on Cancel button                            | "No"                       |
 | textConfirm      | string   | Text display on Confirm button                           | "Yes"                      |
-| backdropClose    | boolean  | Close Media Modal when press on mask                     |
+| backdropClose    | boolean  | Close Media Modal when press on mask                     | "false"                    |
 | useNativeDriver  | boolean  | Allowing native code to perform the animation            | false                      |
 | customStyles     | object   | Custom style to AlertPro                                 | {}                         |
 | onCancel         | function | Event on Cancel button                                   | null                       |
@@ -64,12 +64,13 @@ customStyles: {
   textButtonConfirm: {...} // Confirm button's Text
 }
 ```
-
+## Dependencies 
+This project use the dependency [React Native Webview](https://github.com/react-native-webview/react-native-webview "React Native Webview")
 
 ## Credits 
 [Inspired on React Native Alert Pro from NY Samnang](https://github.com/nysamnang/react-native-alert-pro "Inspired on React Native Alert Pro from NY Samnang")
 
-If you find the project useful, please contribute with a star!
+If you think the project is useful, please contribute with a star!
 
 ## Author
 By [Alan Ribeiro](https://github.com/zapcriativo "Alan Ribeiro")

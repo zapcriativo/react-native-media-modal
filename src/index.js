@@ -39,7 +39,6 @@ class MediaModal extends Component {
 
   close() {
     const { onClose } = this.props;
-    console.log('fechou o modal')
     this.setState({ visible: false }, () => {
       this.springValue.setValue(0);
       if (typeof onClose === "function") onClose();

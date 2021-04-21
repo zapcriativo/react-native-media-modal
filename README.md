@@ -19,11 +19,10 @@ import MediaModal from "react-native-media-modal";
 ```
 
 ```jsx
-<MediaModal ref={ref => { Modal = ref }} />
+<MediaModal ref={ref => { this.MyModal = ref }} />
 ```
 
-> Blockquotes
-For the methods works, you should create the reference
+> For the methods works, you should create the reference
                 
 ## Methods
 
@@ -36,10 +35,10 @@ Examples
 
 ```jsx
 // Open Modal
-function ExampleModalOpen = () => { myModal.open()}
+function ExampleModalOpen = () => { this.MyModal.open()}
 
 // Close Modal
-function ExampleModalClose = () => { myModal.close()}
+function ExampleModalClose = () => { this.MyModal.close()}
 
 ```
 

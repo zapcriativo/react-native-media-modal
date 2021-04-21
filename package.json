@@ -24,11 +24,13 @@
     "url": "https://github.com/zapcriativo/react-native-media-modal/issues"
   },
   "homepage": "https://github.com/zapcriativo/react-native-media-modal/#readme",
+  "dependencies": {
+    "react-native-webview": "9.4.0"
+  },
   "devDependencies": {
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "eslint": "^5.14.1",
-    "react-native-webview": "9.4.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-import": "^2.16.0",

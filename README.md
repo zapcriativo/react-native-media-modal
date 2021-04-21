@@ -17,6 +17,9 @@ yarn add react-native-media-modal
 ```jsx
 import MediaModal from "react-native-media-modal";
 ```
+```jsx
+import MediaModal from "react-native-media-modal";
+```
 
 ## Methods
 

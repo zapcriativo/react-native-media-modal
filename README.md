@@ -1,4 +1,6 @@
-https://github.com/zapcriativo/react-native-media-modal/blob/main/screenshots/rn_media_modal.png?raw=true
+![Screenshot](https://github.com/zapcriativo/react-native-media-modal/blob/main/screenshots/rn_media_modal.png?raw=true)
+
+#### React Native Media Modal is a component that facilitates the creation of a pop-up with media content generally used for communications or in-app marketing.
 
 ## Installation
 
@@ -12,6 +14,20 @@ npm i react-native-media-modal --save
 yarn add react-native-media-modal
 ```
 
+## Usage
+
+```jsx
+import MediaModal from "react-native-media-modal";
+```
+
+## Methods
+
+| Method Name | Description        |
+| ----------- | ------------------ |
+| open        | Open Medial Modal  |
+| close       | Close Medial Modal |
+
+>>>>>>> release/documentation
 ## Props
 
 | Prop             | Type     | Description                                              | Default                    |
@@ -23,9 +39,9 @@ yarn add react-native-media-modal
 | mediaURL         | string   | Url from Image or Video Embebed if you use Webview       | true                       |
 | showCancel       | boolean  | Show a Cancel button                                     | true                       |
 | showConfirm      | boolean  | Show a Confirm button                                    | true                       |
-| textCancel       | string   | Text display on Cancel button                            | "No"                       |
-| textConfirm      | string   | Text display on Confirm button                           | "Yes"                      |
-| backdropClose    | boolean  | Close Media Modal when press on mask                     |
+| textCancel       | string   | Text display on Cancel button                            | ""                         |
+| textConfirm      | string   | Text display on Confirm button                           | ""                         |
+| backdropClose    | boolean  | Close Media Modal when press on mask                     | false                      |
 | useNativeDriver  | boolean  | Allowing native code to perform the animation            | false                      |
 | customStyles     | object   | Custom style to AlertPro                                 | {}                         |
 | onCancel         | function | Event on Cancel button                                   | null                       |
@@ -49,3 +65,13 @@ customStyles: {
   textButtonConfirm: {...} // Confirm button's Text
 }
 ```
+## Dependencies 
+This project use the dependency [React Native Webview](https://github.com/react-native-webview/react-native-webview "React Native Webview")
+
+## Credits 
+[Inspired on React Native Alert Pro from NY Samnang](https://github.com/nysamnang/react-native-alert-pro "Inspired on React Native Alert Pro from NY Samnang")
+
+If you think the project is useful, please contribute with a star!
+
+## Author
+By [Alan Ribeiro](https://github.com/zapcriativo "Alan Ribeiro")

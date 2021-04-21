@@ -17,16 +17,31 @@ yarn add react-native-media-modal
 ```jsx
 import MediaModal from "react-native-media-modal";
 ```
+
 ```jsx
-import MediaModal from "react-native-media-modal";
+<MediaModal ref={ref => { Modal = ref }} />
 ```
 
+> Blockquotes
+For the methods works, you should create the reference
+                
 ## Methods
 
 | Method Name | Description        |
 | ----------- | ------------------ |
 | open        | Open Medial Modal  |
 | close       | Close Medial Modal |
+
+Examples
+
+```jsx
+// Open Modal
+function ExampleModalOpen = () => { myModal.open()}
+
+// Close Modal
+function ExampleModalClose = () => { myModal.close()}
+
+```
 
 ## Props
 
@@ -65,6 +80,73 @@ customStyles: {
   textButtonConfirm: {...} // Confirm button's Text
 }
 ```
+
+## Example with modal customization 
+```jsx
+import React from 'react';
+import { StyleSheet, View, Button } from 'react-native';
+import MediaModal from 'react-native-media-modal';
+
+const modalCustomStyles = {
+  BackgroundMask: { backgroundColor: 'rgba(255,101,80, 0.4)' },
+  container: { backgroundColor: '#e3e3e3' },
+  title: { color: 'orange' },
+  media: { width: 300 },
+  message: { color: 'green' },
+  closeButton: { backgroundColor: '#439431' },
+  closeButtonIcon: { color: '#000' },
+  buttonCancel: { backgroundColor: '#457d34' },
+  buttonConfirm: { backgroundColor: '#542862' },
+  textButtonCancel: { color: 'purple' },
+  textButtonConfirm: { color: 'pink' },
+  customComponent: { backgroundColor: '#dadada' }
+}
+
+const CustomComponent = <Text>Hello World!</Text>
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  // ACTION ON CLOSE MODAL, CANCEL AND CONFIRM BUTTON TOUCH
+  onClose = () => {
+    console.log('Modal just closed');
+  }
+
+  onCancel = () => {
+    console.log('User cancel')
+    this.MyModal.close()
+  }
+
+  onConfirm = () => {
+    console.log('User confirm')
+  }
+
+  render() {
+    return (
+      <View style={{flex: 1,    backgroundColor: '#fff',    alignItems: 'center',    justifyContent: 'center'}}>
+        <Button title="Open Modal" color="#841584" accessibilityLabel="Learn more about this purple button" onPress={() => this.MyModal.open()} />
+        <MediaModal
+          ref={ref => { this.MyModal = ref }}
+          title={'Welcome to My App'}
+          message={'In this App, we will demonstrate the use of React Native Media Modal'}
+          mediaURL={'https://www.url.com/myimage.png'}
+          showCancel={true}
+          showConfirm={true}
+          onClose={this.onClose}
+          onCancel={this.onCancel}
+          onConfirm={this.onConfirm}
+          backdropClose={false}
+          customComponent={CustomComponent}
+          customStyles={modalCustomStyles}
+        />
+      </View>
+    );
+  }
+}
+```
+
 ## Dependencies 
 This project use the dependency [React Native Webview](https://github.com/react-native-webview/react-native-webview "React Native Webview")
 

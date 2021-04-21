@@ -61,7 +61,7 @@ class MediaModal extends Component {
       title,
       message,
       backdropClose,
-      mediaType,
+      mediaImage,
       showMedia,
       mediaURL,
       customComponent,
@@ -183,7 +183,8 @@ MediaModal.defaultProps = {
   showCancel: false,
   showConfirm: false,
   textCancel: 'Maybe later!',
-  textConfirm: 'Yes, I do'
+  textConfirm: 'Yes, I do',
+  customComponent: null
 };
 
 export default MediaModal

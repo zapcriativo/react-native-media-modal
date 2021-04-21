@@ -62,6 +62,7 @@ function ExampleModalClose = () => { myModal.close()}
 | onCancel         | function | Event on Cancel button                                   | null                       |
 | onConfirm        | function | Event on Confirm button                                  | null                       |
 | onClose          | function | Callback function when modal has closed                  | null                       |
+| customComponent  | function | Inject custom component inside of modal                  | null                       |
 
 ### Available Custom Style
 
@@ -153,7 +154,8 @@ This project use the dependency [React Native Webview](https://github.com/react-
 ## Credits 
 [Inspired on React Native Alert Pro from NY Samnang](https://github.com/nysamnang/react-native-alert-pro "Inspired on React Native Alert Pro from NY Samnang")
 
-If you think the project is useful, please contribute with a star!
-
 ## Author
 By [Alan Ribeiro](https://github.com/zapcriativo "Alan Ribeiro")
+
+If you think the project is useful, please contribute with a star!
+

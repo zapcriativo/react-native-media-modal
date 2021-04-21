@@ -1,6 +1,6 @@
 {
   "name": "react-native-media-modal",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "React Native Modal with Media Content",
   "main": "index.js",
   "scripts": {

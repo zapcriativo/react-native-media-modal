@@ -7,13 +7,11 @@
 ```
 npm i react-native-media-modal --save
 ```
-
 ### or
 
 ```
 yarn add react-native-media-modal
 ```
-
 ## Usage
 
 ```jsx
@@ -27,7 +25,6 @@ import MediaModal from "react-native-media-modal";
 | open        | Open Medial Modal  |
 | close       | Close Medial Modal |
 
->>>>>>> release/documentation
 ## Props
 
 | Prop             | Type     | Description                                              | Default                    |

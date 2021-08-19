@@ -149,7 +149,7 @@ export default class App extends React.Component {
 ```
 
 ## Example using functional component
-```
+```jsx
 import React, { useRef } from 'react'
 import { Text, View, Button } from 'react-native'
 

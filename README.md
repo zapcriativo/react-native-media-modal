@@ -48,6 +48,7 @@ function ExampleModalClose = () => { this.MyModal.close()}
 | ---------------- | -------- | -------------------------------------------------------- | -------------------------- |
 | title            | string   | Media Modal Content Title                                | ""                         |
 | message          | string   | Media Modal message                                      | ""                         |
+| textPositionTop  | boolean  | Use title and message above image                        | false                      |
 | showMedia        | boolean  | Display Media Block                                      | true                       |
 | mediaImage       | boolean  | Load Image on Media Block or Webview                     | true                       |
 | mediaURL         | string   | Url from Image or Video Embebed if you use Webview       | true                       |
@@ -147,6 +148,45 @@ export default class App extends React.Component {
 }
 ```
 
+## Example using functional component
+```
+import React, { useRef } from 'react'
+import { Text, View, Button } from 'react-native'
+
+import MediaModal from 'react-native-media-modal';
+
+const modalCustomStyles = {
+    BackgroundMask: { backgroundColor: 'rgba(255,101,80, 0.4)' },
+    container: { backgroundColor: '#e3e3e3' },
+    title: { color: 'orange' },
+    media: { width: 300 },
+    message: { color: 'green' },
+}
+
+const MediaModalExample = () => {
+
+    const MediaModalRef = useRef();
+
+    return (
+        <View>
+            <Text>Media Modal Example - Functional Component</Text>
+            <Button title="Open Modal" color="#841584" onPress={MediaModalRef.current.open()} />
+            <MediaModal
+                ref={MediaModalRef}
+                title={'Media Modal Functional Components'}
+                message={'This is a example using functional components with Media Modal'}
+                mediaURL={'https://www.url.com/myimage.png'}
+                showCancel={true}
+                showConfirm={true}
+                backdropClose={false}
+                customStyles={modalCustomStyles}
+            />
+        </View>
+    )
+}
+
+export default MediaModalExample
+```
 ## Dependencies 
 This project use the dependency [React Native Webview](https://github.com/react-native-webview/react-native-webview "React Native Webview")
 

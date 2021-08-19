@@ -68,7 +68,8 @@ class MediaModal extends Component {
       showCancel,
       showConfirm,
       textCancel,
-      textConfirm
+      textConfirm,
+      textPositionTop
     } = this.props;
 
     const { visible } = this.state;
@@ -89,6 +90,15 @@ class MediaModal extends Component {
         >
           <TouchableWithoutFeedback>
             <Animated.View style={[styles.container, customStyles.container, { transform: [{ scale: this.springValue }] }]}>
+
+              {textPositionTop && (
+                <View style={[styles.ContentContainer, customStyles.title]}>
+                  {title && (<Text style={[styles.title, customStyles.title]}>{title}</Text>)}
+                  {message && (<Text style={[styles.message, customStyles.message]}>{message}</Text>)}
+                </View>
+              )}
+
+
               {showMedia && (
                 <View>
                   {mediaImage ? (
@@ -113,10 +123,12 @@ class MediaModal extends Component {
                 </View>
               )}
 
-              <View style={[styles.ContentContainer, customStyles.title]}>
-                {title && <Text style={[styles.title, customStyles.title]}>{title}</Text>}
-                {message && <Text style={[styles.message, customStyles.message]}>{message}</Text>}
-              </View>
+              {!textPositionTop && (
+                <View style={[styles.ContentContainer, customStyles.title]}>
+                  {title && (<Text style={[styles.title, customStyles.title]}>{title}</Text>)}
+                  {message && (<Text style={[styles.message, customStyles.message]}>{message}</Text>)}
+                </View>
+              )}
 
 
               <View style={styles.buttonContainer}>
@@ -171,8 +183,8 @@ MediaModal.propTypes = {
 
 MediaModal.defaultProps = {
   customStyles: {},
-  title: 'React Native Media Modal 😊',
-  message: "Thanks for using React Native Media Modal, with this component you can show any media for yours users",
+  title: null,
+  message: null,
   backdropClose: true,
   onClose: null,
   showMedia: true,
@@ -183,6 +195,7 @@ MediaModal.defaultProps = {
   showConfirm: false,
   textCancel: 'Maybe later!',
   textConfirm: 'Yes, I do',
+  textPositionTop: false,
   customComponent: null
 };
 

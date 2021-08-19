@@ -11,6 +11,7 @@ declare module "react-native-media-modal" {
     textConfirm?: string;
     backdropClose?: boolean;
     useNativeDriver?: boolean;
+    textPositionTop: boolean;
     onCancel?: () => void;
     onConfirm?: () => void;
     onClose?: () => void;
